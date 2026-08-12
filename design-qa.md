@@ -64,7 +64,7 @@
 - [P2] Mobile financial values were removed by a small-screen CSS rule, leaving only aria-hidden bars and years.
 - [P2] Small blue labels and the original single-color focus outline missed contrast targets.
 - [P3] Data-table `aria-labelledby` attributes pointed to absent heading IDs.
-- Fixes: restored compact visible `R`/`P` labels for all five years with full accessible names, darkened the small-text blue token to `#2879ad`, added a navy-backed two-tone focus treatment, and assigned stable IDs to every section heading.
+- Fixes: restored compact visible `R`/`P` labels for all five years with full accessible names, darkened the small-text blue token to `#2879ad`, added a navy-backed two-tone focus treatment (including the primary-button shadow override), and assigned stable IDs to every section heading.
 - Post-fix evidence: `reference/implementation/mobile-financial-values-final.png`. Browser measurements show all ten exact revenue/profit values exposed, a 390 px body width, and valid heading references for both data tables.
 - Result: all independent-review findings are resolved.
 

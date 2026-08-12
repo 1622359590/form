@@ -58,5 +58,8 @@ describe("production assets", () => {
 
     expect(css).toContain("--blue: #2879ad;");
     expect(css).toMatch(/:focus-visible\s*\{[^}]*box-shadow:/s);
+    expect(css).toMatch(
+      /\.button--primary:focus-visible\s*\{[^}]*box-shadow:/s,
+    );
   });
 });
