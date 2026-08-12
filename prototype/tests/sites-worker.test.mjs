@@ -49,16 +49,17 @@ test("makes social-preview image URLs absolute for HTML responses", async () => 
     {
       ASSETS: {
         fetch: async () =>
-          new Response('<meta property="og:image" content="/og.png" />', {
-            headers: { "content-type": "text/html; charset=utf-8" },
-          }),
+          new Response(
+            '<link rel="canonical" href="/" /><meta property="og:url" content="/" /><meta property="og:image" content="/og.png" />',
+            { headers: { "content-type": "text/html; charset=utf-8" } },
+          ),
       },
     },
   );
 
   assert.match(
     await response.text(),
-    /content="https:\/\/preview\.example\.test\/og\.png"/,
+    /href="https:\/\/preview\.example\.test\/".*content="https:\/\/preview\.example\.test\/".*content="https:\/\/preview\.example\.test\/og\.png"/,
   );
 });
 

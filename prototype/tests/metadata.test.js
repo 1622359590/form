@@ -6,7 +6,12 @@ describe("site metadata", () => {
     const html = readFileSync("index.html", "utf8");
 
     expect(html).toContain("From Silicon to Intelligence");
+    expect(html).toContain('rel="canonical" href="/"');
+    expect(html).toContain('property="og:url" content="/"');
     expect(html).toContain('property="og:image" content="/og.png"');
+    expect(html).toContain('property="og:image:width" content="1200"');
+    expect(html).toContain('property="og:image:height" content="630"');
+    expect(html).toContain('property="og:image:alt"');
     expect(html).toContain('name="twitter:card" content="summary_large_image"');
     expect(html).not.toMatch(/<title>\s*Prototype\s*<\/title>/i);
   });
