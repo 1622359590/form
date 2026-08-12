@@ -18,6 +18,12 @@ describe("production assets", () => {
     }
   });
 
+  it("does not bundle source hotlinks into the production content model", () => {
+    const manifest = readFileSync("src/content/source-manifest.json", "utf8");
+
+    expect(manifest).not.toMatch(/https?:\/\//);
+  });
+
   it("contains no captured extension or missing-resource references", () => {
     const files = ["src/App.jsx", "src/styles.css", "src/content/site-content.js"];
     const source = files
