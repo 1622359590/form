@@ -4,9 +4,9 @@
 
 **Goal:** Build a clean, locally runnable, responsive recreation of `https://from.shmww.top/` that preserves all 14 source cards and their assets while replacing the polluted browser-saved markup and improving the editorial layout.
 
-**Architecture:** Use the Sites React/Vinext starter as a one-route static frontend. Store the captured business content in a typed content module, render it through focused editorial components, bundle every required image and font locally, and keep the two unavailable calls to action as accessible “Coming soon” controls. Automated tests cover content parity and interaction behavior; browser comparison at desktop and 390 × 844 is the final gate.
+**Architecture:** Use the bundled Product Design web prototype as a one-route static frontend. Store the captured business content in a typed content module, render it through focused editorial components, bundle every required image and font locally, and keep the two unavailable calls to action as accessible “Coming soon” controls. Automated tests cover content parity and interaction behavior; browser comparison at desktop and 390 × 844 is the final gate.
 
-**Tech Stack:** Sites React/Vinext starter, TypeScript, CSS, Vitest, Testing Library, local static assets, browser-based visual QA.
+**Tech Stack:** Product Design Vite/React prototype, TypeScript, CSS, Vitest, Testing Library, local static assets, browser-based visual QA.
 
 ## Global Constraints
 
@@ -19,6 +19,18 @@
 - Keep “Schedule a Meeting” and “Download Full BP” disconnected from external destinations; both announce “Coming soon.”
 - Support keyboard use, visible focus, semantic headings, reduced motion, and zero horizontal overflow at 390 px.
 - Do not publish or alter `from.shmww.top` during this plan.
+
+## Execution Environment Correction
+
+The active Product Design runtime requires its bundled web prototype instead of initializing a Sites/Vinext starter. This section is authoritative where later task wording mentions the earlier starter or `app/` paths:
+
+- Bootstrap the web prototype into `prototype/` with `bootstrap-prototype.mjs` and preserve its Sites-ready Vite/Worker runtime.
+- Use `prototype/src/Prototype.tsx` for page composition, `prototype/src/prototype.css` for the finished visual system, `prototype/src/content/` for typed content, and `prototype/src/components/` for focused components.
+- Use `prototype/index.html` for finished title and social metadata.
+- Put tests under `prototype/tests/` and assets under `prototype/public/assets/source/`.
+- Keep `prototype/src/App.tsx`, `prototype/src/main.tsx`, `prototype/src/styles.css`, `prototype/vite.config.ts`, `prototype/worker/`, and the Sites build scripts intact unless the starter's documented web-template contract explicitly permits a change.
+- Run `npm run test:sites` in addition to the plan's automated tests and production build.
+- Do not invoke Sites initialization or deploy the prototype unless the user separately requests publishing.
 
 ---
 
