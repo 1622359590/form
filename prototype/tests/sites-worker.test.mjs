@@ -41,6 +41,27 @@ test("falls back to index.html for an unknown app route", async () => {
   assert.deepEqual(calls, ["/flow/step-two?source=share", "/index.html"]);
 });
 
+test("makes social-preview image URLs absolute for HTML responses", async () => {
+  const response = await worker.fetch(
+    new Request("https://preview.example.test/", {
+      headers: { accept: "text/html" },
+    }),
+    {
+      ASSETS: {
+        fetch: async () =>
+          new Response('<meta property="og:image" content="/og.png" />', {
+            headers: { "content-type": "text/html; charset=utf-8" },
+          }),
+      },
+    },
+  );
+
+  assert.match(
+    await response.text(),
+    /content="https:\/\/preview\.example\.test\/og\.png"/,
+  );
+});
+
 test("does not turn missing API or write requests into the app shell", async () => {
   for (const request of [
     new Request("https://example.test/api/missing", { headers: { accept: "application/json" } }),
