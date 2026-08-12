@@ -51,6 +51,7 @@ function localImagePath(sourceUrl) {
 function normalizeCell(cell) {
   return {
     ...cell,
+    attrs: cell.attrs ?? {},
     images: cell.imageUrls.map(localImagePath).filter(Boolean),
   };
 }

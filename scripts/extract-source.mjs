@@ -66,6 +66,7 @@ function normalizedTextList(card, type) {
 
 function normalizeCell(cell) {
   return {
+    attrs: cell.attrs ?? {},
     headings: normalizedTextList(cell, "heading"),
     paragraphs: normalizedTextList(cell, "paragraph"),
     bullets: normalizedTextList(cell, "bullet"),

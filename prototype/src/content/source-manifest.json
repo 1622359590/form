@@ -1,6 +1,6 @@
 {
   "sourceUrl": "https://from.shmww.top/",
-  "capturedAt": "2026-08-12T15:35:52.207Z",
+  "capturedAt": "2026-08-12T15:43:35.901Z",
   "sourceTitle": "From Silicon to Intelligence — Defining the New Productive Forces of the Smart Era",
   "cards": [
     {
@@ -52,6 +52,7 @@
       "smartCells": [],
       "gridCells": [
         {
+          "attrs": {},
           "headings": [],
           "paragraphs": [
             "We stand at a historic inflection point — one driven by large AI models and a fundamental restructuring of compute infrastructure. Demand for computing power is growing exponentially, while the supply of advanced-node chips scales only linearly. This supply-demand tension is the most certain investment theme of the next decade.",
@@ -62,6 +63,9 @@
           "imageUrls": []
         },
         {
+          "attrs": {
+            "backgroundColor": "#063E5F"
+          },
           "headings": [
             "The Strategic Integration"
           ],
@@ -103,6 +107,10 @@
       "tableRows": [],
       "smartCells": [
         {
+          "attrs": {
+            "id": "FS89M",
+            "options": {}
+          },
           "headings": [
             "Brain"
           ],
@@ -113,6 +121,10 @@
           "imageUrls": []
         },
         {
+          "attrs": {
+            "id": "NRfgl",
+            "options": {}
+          },
           "headings": [
             "Soul"
           ],
@@ -123,6 +135,10 @@
           "imageUrls": []
         },
         {
+          "attrs": {
+            "id": "PySVl",
+            "options": {}
+          },
           "headings": [
             "Body"
           ],
@@ -133,6 +149,10 @@
           "imageUrls": []
         },
         {
+          "attrs": {
+            "id": "MHj7d",
+            "options": {}
+          },
           "headings": [
             "Landing"
           ],
@@ -233,6 +253,10 @@
       "tableRows": [],
       "smartCells": [
         {
+          "attrs": {
+            "id": "TaKO0",
+            "options": {}
+          },
           "headings": [
             "Pain Point 1: The Compute Bottleneck — China Needs Its Own NVIDIA"
           ],
@@ -243,6 +267,10 @@
           "imageUrls": []
         },
         {
+          "attrs": {
+            "id": "fu8wo",
+            "options": {}
+          },
           "headings": [
             "Pain Point 2: The \"Last Mile\" Problem of AI Application Deployment"
           ],
@@ -253,6 +281,10 @@
           "imageUrls": []
         },
         {
+          "attrs": {
+            "id": "AlipQ",
+            "options": {}
+          },
           "headings": [
             "Pain Point 3: Embodied Intelligence — High Valuations, No Commercial Loop"
           ],
@@ -349,6 +381,7 @@
       "smartCells": [],
       "gridCells": [
         {
+          "attrs": {},
           "headings": [],
           "paragraphs": [
             "Born from 红山微电子, our technical team carries over 20 years of GPGPU design expertise. Core members have led multiple world-class supercomputing chips — including M. Saito, the founding architect of the global MIMD architecture and a multi-time Green500 #1 winner.",
@@ -359,6 +392,7 @@
           "imageUrls": []
         },
         {
+          "attrs": {},
           "headings": [],
           "paragraphs": [
             "Metric",
@@ -420,6 +454,10 @@
       "tableRows": [],
       "smartCells": [
         {
+          "attrs": {
+            "id": "i1V2L",
+            "options": {}
+          },
           "headings": [
             "Physical World Presence"
           ],
@@ -430,6 +468,10 @@
           "imageUrls": []
         },
         {
+          "attrs": {
+            "id": "ImLaQ",
+            "options": {}
+          },
           "headings": [
             "End-to-End Workflow"
           ],
@@ -440,6 +482,10 @@
           "imageUrls": []
         },
         {
+          "attrs": {
+            "id": "xunVc",
+            "options": {}
+          },
           "headings": [
             "Omnichannel Capability"
           ],
@@ -450,6 +496,10 @@
           "imageUrls": []
         },
         {
+          "attrs": {
+            "id": "Larbx",
+            "options": {}
+          },
           "headings": [
             "Full-Scene Coverage"
           ],
@@ -490,6 +540,7 @@
       "smartCells": [],
       "gridCells": [
         {
+          "attrs": {},
           "headings": [],
           "paragraphs": [],
           "bullets": [],
@@ -498,6 +549,7 @@
           ]
         },
         {
+          "attrs": {},
           "headings": [
             "Store Network Expansion"
           ],
@@ -545,6 +597,48 @@
       "tableRows": [],
       "smartCells": [
         {
+          "attrs": {
+            "id": "HzLBQ",
+            "options": {},
+            "image": {
+              "loadImageParams": {
+                "provider": "aiGenerated",
+                "query": "distinguished senior male executive in formal attire with academic background bookshelves",
+                "options": {
+                  "aspectRatio": "square",
+                  "model": "flux-2-pro",
+                  "stylePrompt": "",
+                  "stylePreset": "None",
+                  "artStylePreset": "",
+                  "artStylePrompt": "",
+                  "styleReferenceImages": [],
+                  "visualsMenuEnabled": true,
+                  "styleReferenceKey": "classic_photo"
+                }
+              },
+              "source": "image.ai-generated",
+              "loadImageStatus": "done",
+              "loadImageId": "9gx3J",
+              "src": "https://cdn.gamma.app/07dxnp20nk06s9o/generated-images/qQqR3TGxAOAwVTGrbYbYw.jpg",
+              "meta": {
+                "width": 1440,
+                "height": 1440,
+                "has_transparency": false
+              },
+              "aiParams": {
+                "prompt": "distinguished senior male executive in formal attire with academic background bookshelves, photorealistic. highly detailed, cinematic, professional",
+                "model": "flux-2-pro",
+                "width": 1440,
+                "height": 1440,
+                "interactionId": "6zuwbb380yux8ev",
+                "styleReferenceKey": "classic_photo"
+              },
+              "savedMediaId": "ep9z7m5hy14i1pf",
+              "query": "distinguished senior male executive in formal attire with academic background bookshelves",
+              "tempUrl": null,
+              "uploadStatus": 3
+            }
+          },
           "headings": [
             "Zhou Jianwu · Executive Director"
           ],
@@ -557,6 +651,48 @@
           ]
         },
         {
+          "attrs": {
+            "id": "_MwW1",
+            "options": {},
+            "image": {
+              "loadImageParams": {
+                "provider": "aiGenerated",
+                "query": "confident male tech executive in modern glass office with city view",
+                "options": {
+                  "aspectRatio": "square",
+                  "model": "flux-2-pro",
+                  "stylePrompt": "",
+                  "stylePreset": "None",
+                  "artStylePreset": "",
+                  "artStylePrompt": "",
+                  "styleReferenceImages": [],
+                  "visualsMenuEnabled": true,
+                  "styleReferenceKey": "classic_photo"
+                }
+              },
+              "source": "image.ai-generated",
+              "loadImageStatus": "done",
+              "loadImageId": "OBhw6",
+              "src": "https://cdn.gamma.app/07dxnp20nk06s9o/generated-images/r72Bp2T0be8mj2BPoYlO3.jpg",
+              "meta": {
+                "width": 1440,
+                "height": 1440,
+                "has_transparency": false
+              },
+              "aiParams": {
+                "prompt": "confident male tech executive in modern glass office with city view, photorealistic. highly detailed, cinematic, professional",
+                "model": "flux-2-pro",
+                "width": 1440,
+                "height": 1440,
+                "interactionId": "6zuwbb380yux8ev",
+                "styleReferenceKey": "classic_photo"
+              },
+              "savedMediaId": "fiwazvhddpy440s",
+              "query": "confident male tech executive in modern glass office with city view",
+              "tempUrl": null,
+              "uploadStatus": 3
+            }
+          },
           "headings": [
             "Wang Yi · President"
           ],
@@ -569,6 +705,48 @@
           ]
         },
         {
+          "attrs": {
+            "id": "1bgcy",
+            "options": {},
+            "image": {
+              "loadImageParams": {
+                "provider": "aiGenerated",
+                "query": "focused senior engineer working at a chip design workstation with multiple monitors",
+                "options": {
+                  "aspectRatio": "square",
+                  "model": "flux-2-pro",
+                  "stylePrompt": "",
+                  "stylePreset": "None",
+                  "artStylePreset": "",
+                  "artStylePrompt": "",
+                  "styleReferenceImages": [],
+                  "visualsMenuEnabled": true,
+                  "styleReferenceKey": "classic_photo"
+                }
+              },
+              "source": "image.ai-generated",
+              "loadImageStatus": "done",
+              "loadImageId": "q9G9v",
+              "src": "https://cdn.gamma.app/07dxnp20nk06s9o/generated-images/s9qKDtlZLhboVWEJ7--Rd.jpg",
+              "meta": {
+                "width": 1440,
+                "height": 1440,
+                "has_transparency": false
+              },
+              "aiParams": {
+                "prompt": "focused senior engineer working at a chip design workstation with multiple monitors, photorealistic. highly detailed, cinematic, professional",
+                "model": "flux-2-pro",
+                "width": 1440,
+                "height": 1440,
+                "interactionId": "6zuwbb380yux8ev",
+                "styleReferenceKey": "classic_photo"
+              },
+              "savedMediaId": "egaw61jyag2y3e8",
+              "query": "focused senior engineer working at a chip design workstation with multiple monitors",
+              "tempUrl": null,
+              "uploadStatus": 3
+            }
+          },
           "headings": [
             "M. Saito · Chief Designer"
           ],
@@ -581,6 +759,48 @@
           ]
         },
         {
+          "attrs": {
+            "id": "QdXX_",
+            "options": {},
+            "image": {
+              "loadImageParams": {
+                "provider": "aiGenerated",
+                "query": "professional businesswoman in a modern tech office environment smiling confidently",
+                "options": {
+                  "aspectRatio": "square",
+                  "model": "flux-2-pro",
+                  "stylePrompt": "",
+                  "stylePreset": "None",
+                  "artStylePreset": "",
+                  "artStylePrompt": "",
+                  "styleReferenceImages": [],
+                  "visualsMenuEnabled": true,
+                  "styleReferenceKey": "classic_photo"
+                }
+              },
+              "source": "image.ai-generated",
+              "loadImageStatus": "done",
+              "loadImageId": "jHdSI",
+              "src": "https://cdn.gamma.app/07dxnp20nk06s9o/generated-images/uUK9I8_Jov-fR0FvOf4dl.jpg",
+              "meta": {
+                "width": 1440,
+                "height": 1440,
+                "has_transparency": false
+              },
+              "aiParams": {
+                "prompt": "professional businesswoman in a modern tech office environment smiling confidently, photorealistic. highly detailed, cinematic, professional",
+                "model": "flux-2-pro",
+                "width": 1440,
+                "height": 1440,
+                "interactionId": "6zuwbb380yux8ev",
+                "styleReferenceKey": "classic_photo"
+              },
+              "savedMediaId": "ib0if5nyj9ru0l9",
+              "query": "professional businesswoman in a modern tech office environment smiling confidently",
+              "tempUrl": null,
+              "uploadStatus": 3
+            }
+          },
           "headings": [
             "Huang Libo · Co-Founder & Director"
           ],
@@ -625,6 +845,29 @@
       "tableRows": [],
       "smartCells": [
         {
+          "attrs": {
+            "id": "rsUs0",
+            "options": {},
+            "image": {
+              "loadImageParams": {
+                "provider": "icon",
+                "query": "microchip circuit",
+                "options": {
+                  "license": "All"
+                }
+              },
+              "loadImageStatus": "done",
+              "loadImageId": "S6yb9",
+              "src": "https://iconscdn.pictographic.ai/image/ZczKMyMFUCEkZNWtqJWb.svg?stroke=45",
+              "tempUrl": "https://iconscdn.pictographic.ai/image/ZczKMyMFUCEkZNWtqJWb.svg?stroke=45",
+              "meta": {
+                "description": "A small, solid black rectangle with a flat top and a series of tiny, short lines on its right and left edges, symbolizing a microchip, a crucial component in modern electronics."
+              },
+              "query": "microchip circuit",
+              "source": "image.pictographic.icon",
+              "uploadStatus": 3
+            }
+          },
           "headings": [
             "Engine 1: Chip Sales & IP Licensing (Bedrock, High Margin)"
           ],
@@ -637,6 +880,29 @@
           ]
         },
         {
+          "attrs": {
+            "id": "gywaU",
+            "options": {},
+            "image": {
+              "loadImageParams": {
+                "provider": "icon",
+                "query": "cloud software subscription",
+                "options": {
+                  "license": "All"
+                }
+              },
+              "loadImageStatus": "done",
+              "loadImageId": "6autd",
+              "src": "https://iconscdn.pictographic.ai/image/Hv3dzbVHSTmqkEGDmD4w.svg?stroke=45",
+              "tempUrl": "https://iconscdn.pictographic.ai/image/Hv3dzbVHSTmqkEGDmD4w.svg?stroke=45",
+              "meta": {
+                "description": "A black cloud emitting rays of sunlight, symbolizing the concept of a cloud sun."
+              },
+              "query": "cloud software subscription",
+              "source": "image.pictographic.icon",
+              "uploadStatus": 3
+            }
+          },
           "headings": [
             "Engine 2: Digital Employee SaaS Subscriptions (High Growth, Recurring)"
           ],
@@ -649,6 +915,29 @@
           ]
         },
         {
+          "attrs": {
+            "id": "qOsJt",
+            "options": {},
+            "image": {
+              "loadImageParams": {
+                "provider": "icon",
+                "query": "robot store retail",
+                "options": {
+                  "license": "All"
+                }
+              },
+              "loadImageStatus": "done",
+              "loadImageId": "uzaEv",
+              "src": "https://iconscdn.pictographic.ai/image/FSqmDrhxpxfQ9XoggikE6B.svg?stroke=45",
+              "tempUrl": "https://iconscdn.pictographic.ai/image/FSqmDrhxpxfQ9XoggikE6B.svg?stroke=45",
+              "meta": {
+                "description": "Since there is no visual provided, I will assume a common symbol for \"store\". \n\nA building shape with a simple rectangular body and a triangular roof, often accompanied by a door and sometimes windows, symbolizing a place where goods or services are sold."
+              },
+              "query": "robot store retail",
+              "source": "image.pictographic.icon",
+              "uploadStatus": 3
+            }
+          },
           "headings": [
             "Engine 3: VV-BOT Embodied Intelligence & STEM Education (Stable Cash Flow)"
           ],
@@ -692,6 +981,11 @@
       "tableRows": [],
       "smartCells": [
         {
+          "attrs": {
+            "id": "WmzKk",
+            "options": {},
+            "label": "¥768万"
+          },
           "headings": [
             "Total Annual Revenue"
           ],
@@ -702,6 +996,11 @@
           "imageUrls": []
         },
         {
+          "attrs": {
+            "id": "Os28W",
+            "options": {},
+            "label": "150+"
+          },
           "headings": [
             "National Target"
           ],
@@ -714,12 +1013,14 @@
       ],
       "gridCells": [
         {
+          "attrs": {},
           "headings": [],
           "paragraphs": [],
           "bullets": [],
           "imageUrls": []
         },
         {
+          "attrs": {},
           "headings": [
             "Single Standard Store (150㎡) Annual Summary",
             "Total Annual Revenue",
@@ -817,6 +1118,29 @@
       "tableRows": [],
       "smartCells": [
         {
+          "attrs": {
+            "id": "0vR__",
+            "options": {},
+            "image": {
+              "loadImageParams": {
+                "provider": "icon",
+                "query": "lock shield technology",
+                "options": {
+                  "license": "All"
+                }
+              },
+              "loadImageStatus": "done",
+              "loadImageId": "el1EN",
+              "src": "https://iconscdn.pictographic.ai/image/dt8gZUsSPjEwwysTxJNn3F.svg?stroke=45",
+              "tempUrl": "https://iconscdn.pictographic.ai/image/dt8gZUsSPjEwwysTxJNn3F.svg?stroke=45",
+              "meta": {
+                "description": "A padlock with a closed shackle, signifying security, protection, and restriction, often used to convey the idea of safeguarding or locking something in place."
+              },
+              "query": "lock shield technology",
+              "source": "image.pictographic.icon",
+              "uploadStatus": 3
+            }
+          },
           "headings": [
             "Technical Barrier"
           ],
@@ -829,6 +1153,29 @@
           ]
         },
         {
+          "attrs": {
+            "id": "O3lAq",
+            "options": {},
+            "image": {
+              "loadImageParams": {
+                "provider": "icon",
+                "query": "factory production line chips",
+                "options": {
+                  "license": "All"
+                }
+              },
+              "loadImageStatus": "done",
+              "loadImageId": "Rcj3b",
+              "src": "https://iconscdn.pictographic.ai/image/6CArzER4TrMtK9SBKkum.svg?stroke=45",
+              "tempUrl": "https://iconscdn.pictographic.ai/image/6CArzER4TrMtK9SBKkum.svg?stroke=45",
+              "meta": {
+                "description": "A square shape with a smaller rectangle on top, symbolizing a production facility or industrial site, conveying the concept of manufacturing or production."
+              },
+              "query": "factory production line chips",
+              "source": "image.pictographic.icon",
+              "uploadStatus": 3
+            }
+          },
           "headings": [
             "Production Head Start"
           ],
@@ -841,6 +1188,29 @@
           ]
         },
         {
+          "attrs": {
+            "id": "sLPFo",
+            "options": {},
+            "image": {
+              "loadImageParams": {
+                "provider": "icon",
+                "query": "circular ecosystem connected nodes network",
+                "options": {
+                  "license": "All"
+                }
+              },
+              "loadImageStatus": "done",
+              "loadImageId": "IeJ3O",
+              "src": "https://iconscdn.pictographic.ai/image/W9QEWaDzBNB8IG5F3CTE.svg?stroke=45",
+              "tempUrl": "https://iconscdn.pictographic.ai/image/W9QEWaDzBNB8IG5F3CTE.svg?stroke=45",
+              "meta": {
+                "description": "Interconnected nodes forming a circular pattern, symbolizing connections and relationships between different points or entities."
+              },
+              "query": "circular ecosystem connected nodes network",
+              "source": "image.pictographic.icon",
+              "uploadStatus": 3
+            }
+          },
           "headings": [
             "Closed-Loop Ecosystem"
           ],
@@ -853,6 +1223,29 @@
           ]
         },
         {
+          "attrs": {
+            "id": "qP6qH",
+            "options": {},
+            "image": {
+              "loadImageParams": {
+                "provider": "icon",
+                "query": "elite team meeting boardroom strategy",
+                "options": {
+                  "license": "All"
+                }
+              },
+              "loadImageStatus": "done",
+              "loadImageId": "aywre",
+              "src": "https://iconscdn.pictographic.ai/image/qV4gWu83PZTU40ezdGlF.svg?stroke=45",
+              "tempUrl": "https://iconscdn.pictographic.ai/image/qV4gWu83PZTU40ezdGlF.svg?stroke=45",
+              "meta": {
+                "description": "Two or more circles overlapping, signifying a gathering or assembly of individuals for discussion, collaboration, or socialization."
+              },
+              "query": "elite team meeting boardroom strategy",
+              "source": "image.pictographic.icon",
+              "uploadStatus": 3
+            }
+          },
           "headings": [
             "Team Scarcity"
           ],
@@ -865,6 +1258,29 @@
           ]
         },
         {
+          "attrs": {
+            "id": "4C48X",
+            "options": {},
+            "image": {
+              "loadImageParams": {
+                "provider": "icon",
+                "query": "chess king piece strategic positioning board",
+                "options": {
+                  "license": "All"
+                }
+              },
+              "loadImageStatus": "done",
+              "loadImageId": "oA5qe",
+              "src": "https://iconscdn.pictographic.ai/image/Pow6RwRNkAqxJBbsUKB9xa.svg?stroke=45",
+              "tempUrl": "https://iconscdn.pictographic.ai/image/Pow6RwRNkAqxJBbsUKB9xa.svg?stroke=45",
+              "meta": {
+                "description": "A minimalist black chess king icon on a white background, symbolizing royalty or high-value protection in the context of strategy and games."
+              },
+              "query": "chess king piece strategic positioning board",
+              "source": "image.pictographic.icon",
+              "uploadStatus": 3
+            }
+          },
           "headings": [
             "Market Position Lock-In"
           ],
@@ -918,6 +1334,11 @@
       "tableRows": [],
       "smartCells": [
         {
+          "attrs": {
+            "id": "VXWTg",
+            "options": {},
+            "label": "¥5亿"
+          },
           "headings": [
             "Raise Target"
           ],
@@ -928,6 +1349,11 @@
           "imageUrls": []
         },
         {
+          "attrs": {
+            "id": "EDi5i",
+            "options": {},
+            "label": "10-15%"
+          },
           "headings": [
             "Equity Offered"
           ],
@@ -940,6 +1366,7 @@
       ],
       "gridCells": [
         {
+          "attrs": {},
           "headings": [
             "5-Year Revenue & Profit Forecast (RMB Millions, Base Case)"
           ],
@@ -950,6 +1377,9 @@
           "imageUrls": []
         },
         {
+          "attrs": {
+            "backgroundColor": "#063E5F"
+          },
           "headings": [
             "This Round: A+ / Pre-B",
             "Raise Target",
@@ -1076,6 +1506,10 @@
       "tableRows": [],
       "smartCells": [
         {
+          "attrs": {
+            "id": "_i58X",
+            "options": {}
+          },
           "headings": [
             "Short Term (1–2 Years)"
           ],
@@ -1086,6 +1520,10 @@
           "imageUrls": []
         },
         {
+          "attrs": {
+            "id": "8QAEC",
+            "options": {}
+          },
           "headings": [
             "Mid Term (3–5 Years)"
           ],
@@ -1096,6 +1534,10 @@
           "imageUrls": []
         },
         {
+          "attrs": {
+            "id": "Nm5Bk",
+            "options": {}
+          },
           "headings": [
             "Long Term (5–10 Years)"
           ],
@@ -1106,6 +1548,10 @@
           "imageUrls": []
         },
         {
+          "attrs": {
+            "id": "IZBy_",
+            "options": {}
+          },
           "headings": [
             "National Strategy"
           ],
@@ -1116,6 +1562,10 @@
           "imageUrls": []
         },
         {
+          "attrs": {
+            "id": "qIzkf",
+            "options": {}
+          },
           "headings": [
             "Trillion-RMB Market"
           ],
@@ -1126,6 +1576,10 @@
           "imageUrls": []
         },
         {
+          "attrs": {
+            "id": "-6oib",
+            "options": {}
+          },
           "headings": [
             "Future Imagination"
           ],

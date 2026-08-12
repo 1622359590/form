@@ -1,4 +1,6 @@
+import { render, screen } from "@testing-library/react";
 import { describe, expect, it } from "vitest";
+import { App } from "../src/App.jsx";
 import { siteContent } from "../src/content/site-content.js";
 
 const orderedTitles = [
@@ -36,5 +38,14 @@ describe("site content", () => {
     ]) {
       expect(serialized).not.toContain(forbidden);
     }
+  });
+
+  it("renders all 14 source cards as ordered page regions", () => {
+    render(<App />);
+
+    const regions = screen.getAllByRole("region");
+    expect(regions).toHaveLength(14);
+    expect(regions[0]).toHaveAccessibleName(orderedTitles[0]);
+    expect(regions[13]).toHaveAccessibleName(orderedTitles[13]);
   });
 });
