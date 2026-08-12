@@ -82,7 +82,9 @@ function DataTable({ rows, labelledBy }) {
                     {cell}
                   </th>
                 ) : (
-                  <td key={`${cell}-${index}`}>{cell}</td>
+                  <td key={`${cell}-${index}`} data-label={head[index]}>
+                    {cell}
+                  </td>
                 ),
               )}
             </tr>

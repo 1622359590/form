@@ -50,8 +50,13 @@ function localImagePath(sourceUrl) {
 
 function normalizeCell(cell) {
   return {
-    ...cell,
-    attrs: cell.attrs ?? {},
+    attrs: {
+      backgroundColor: cell.attrs?.backgroundColor ?? null,
+      label: cell.attrs?.label ?? null,
+    },
+    headings: cell.headings,
+    paragraphs: cell.paragraphs,
+    bullets: cell.bullets,
     images: cell.imageUrls.map(localImagePath).filter(Boolean),
   };
 }
