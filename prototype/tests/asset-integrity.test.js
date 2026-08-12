@@ -43,4 +43,20 @@ describe("production assets", () => {
       /\.section-region\s*\{[^}]*scroll-margin-top:/s,
     );
   });
+
+  it("keeps exact financial values visible on mobile", () => {
+    const css = readFileSync("src/styles.css", "utf8");
+    const mobileRules = css.match(/@media \(max-width: 700px\) \{([\s\S]*?)\n\}/)?.[1];
+
+    expect(mobileRules).not.toMatch(
+      /\.financial-chart__values\s*\{[^}]*display:\s*none/s,
+    );
+  });
+
+  it("uses contrast-safe small text and focus tokens", () => {
+    const css = readFileSync("src/styles.css", "utf8");
+
+    expect(css).toContain("--blue: #2879ad;");
+    expect(css).toMatch(/:focus-visible\s*\{[^}]*box-shadow:/s);
+  });
 });

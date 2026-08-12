@@ -35,12 +35,12 @@
 
 ## Required Fidelity Surfaces
 
-- Fonts and typography: local Barlow is used for display hierarchy and local Montserrat for body/UI copy. Weight, tracking, line height, and wrapping were checked at 1440, 1024, 768, and 390 px. No truncation remains in the implementation.
+- Fonts and typography: local Barlow is used for display hierarchy and local Montserrat for body/UI copy. Weight, tracking, line height, and wrapping were checked at 1440, 1024, 768, and 390 px. Compact financial labels preserve every exact value at 390 px without truncating the data.
 - Spacing and layout rhythm: a single 1180 px content frame, consistent section padding, card radii, table spacing, and responsive grid collapse are used. Anchor targets now clear the sticky header by 19 px without a duplicate offset.
-- Colors and tokens: the implementation maps the source's white, pale blue, sky blue, deep navy, soft borders, and restrained gradients into shared CSS variables. Text and controls retain strong visible contrast.
+- Colors and tokens: the implementation maps the source's white, pale blue, sky blue, deep navy, soft borders, and restrained gradients into shared CSS variables. Small blue labels use the contrast-safe `#2879ad` token, and focus states combine a yellow outline with a dark navy outer ring for separation on both white and pale-blue surfaces.
 - Image quality and asset fidelity: the source chip visual, blue texture, robot image, and four team portraits are served locally. Browser checks found zero failed images. No visible source asset was replaced with handcrafted SVG, CSS illustration, emoji, or placeholder art; interface icons come from one consistent library.
 - Copy and content: all 14 source cards render in the original order. Automated checks reject Google Translate, DeepL, Automa, `saved_resource`, `chrome-extension://`, and similar capture residue.
-- Interactions and accessibility: desktop anchors, the mobile menu, Escape-to-close, link-to-close, keyboard focus outlines, and `Coming soon` status feedback were exercised. Navigation and actions use semantic links/buttons and the mobile menu exposes its expanded state.
+- Interactions and accessibility: desktop anchors, the mobile menu, Escape-to-close, link-to-close, keyboard focus outlines, and `Coming soon` status feedback were exercised. Navigation and actions use semantic links/buttons, the mobile menu exposes its expanded state, both data tables reference real heading IDs, and each financial value pair has a concise accessible label.
 - Responsiveness: measured document width equals viewport width at 1440, 1024, 768, and 390 px. The 390 px table renders as readable row cards instead of overflowing.
 
 ## Comparison History
@@ -59,13 +59,22 @@
 - Source comparison: `reference/comparisons/desktop-solutions-postfix-source-left-implementation-right.jpg` confirms the section is now framed cleanly while resolving the source table collapse.
 - Result: the P2 issue is resolved; no new P0/P1/P2 issue appeared.
 
+### Pass 3 — Independent review
+
+- [P2] Mobile financial values were removed by a small-screen CSS rule, leaving only aria-hidden bars and years.
+- [P2] Small blue labels and the original single-color focus outline missed contrast targets.
+- [P3] Data-table `aria-labelledby` attributes pointed to absent heading IDs.
+- Fixes: restored compact visible `R`/`P` labels for all five years with full accessible names, darkened the small-text blue token to `#2879ad`, added a navy-backed two-tone focus treatment, and assigned stable IDs to every section heading.
+- Post-fix evidence: `reference/implementation/mobile-financial-values-final.png`. Browser measurements show all ten exact revenue/profit values exposed, a 390 px body width, and valid heading references for both data tables.
+- Result: all independent-review findings are resolved.
+
 ## Runtime Verification
 
 - Browser-rendered sections: 14.
 - Failed images: 0.
 - Duplicate element IDs: 0.
 - Console: no warnings or errors; only Vite connection/debug and the React development-tools informational message.
-- Primary interactions tested: desktop anchor navigation; mobile menu open, Escape close, link close; reserved CTA status; final footer visibility.
+- Primary interactions tested: desktop anchor navigation; mobile menu open, Escape close, link close; reserved CTA status; final footer visibility; mobile financial values; table heading references.
 
 ## Implementation Checklist
 

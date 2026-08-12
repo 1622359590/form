@@ -8,7 +8,7 @@ export function SectionShell({ card, children, tone = "light" }) {
       <div className="page-shell section-shell">
         <header className="section-heading">
           {card.label ? <p className="eyebrow">{card.label}</p> : null}
-          <h2>{card.heading}</h2>
+          <h2 id={`${card.id}-title`}>{card.heading}</h2>
         </header>
         {children}
       </div>

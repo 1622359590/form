@@ -48,4 +48,25 @@ describe("site content", () => {
     expect(regions[0]).toHaveAccessibleName(orderedTitles[0]);
     expect(regions[13]).toHaveAccessibleName(orderedTitles[13]);
   });
+
+  it("labels exact revenue and profit values in the financial chart", () => {
+    render(<App />);
+
+    expect(
+      screen.getByLabelText("Revenue ¥1621 million; profit ¥243 million"),
+    ).toBeVisible();
+    expect(
+      screen.getByLabelText("Revenue ¥2813 million; profit ¥826 million"),
+    ).toBeVisible();
+  });
+
+  it("gives each data table a valid accessible heading reference", () => {
+    render(<App />);
+
+    for (const table of screen.getAllByRole("table")) {
+      const labelId = table.getAttribute("aria-labelledby");
+      expect(labelId).toBeTruthy();
+      expect(document.getElementById(labelId)).not.toBeNull();
+    }
+  });
 });

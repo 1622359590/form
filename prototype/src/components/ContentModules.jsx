@@ -254,7 +254,13 @@ function FinancialChart({ chart }) {
             />
           </div>
           <strong>{row.year}</strong>
-          <span>¥{row.revenue}M / ¥{row.profit}M</span>
+          <span
+            className="financial-chart__values"
+            aria-label={`Revenue ¥${row.revenue} million; profit ¥${row.profit} million`}
+          >
+            <span aria-hidden="true">R ¥{row.revenue}M</span>
+            <span aria-hidden="true">P ¥{row.profit}M</span>
+          </span>
         </div>
       ))}
     </div>
