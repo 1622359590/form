@@ -1,4 +1,5 @@
 import { CardBody } from "./components/ContentModules.jsx";
+import { BookingContactSection } from "./components/BookingContactSection.jsx";
 import { Hero } from "./components/Hero.jsx";
 import { SectionShell } from "./components/SectionShell.jsx";
 import { SiteFooter } from "./components/SiteFooter.jsx";
@@ -24,6 +25,7 @@ export function App() {
             <CardBody card={card} />
           </SectionShell>
         ))}
+        <BookingContactSection />
       </main>
       <SiteFooter />
     </>

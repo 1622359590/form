@@ -43,10 +43,15 @@ describe("site content", () => {
   it("renders all 14 source cards as ordered page regions", () => {
     render(<App />);
 
-    const regions = screen.getAllByRole("region");
-    expect(regions).toHaveLength(14);
-    expect(regions[0]).toHaveAccessibleName(orderedTitles[0]);
-    expect(regions[13]).toHaveAccessibleName(orderedTitles[13]);
+    const sourceRegions = screen
+      .getAllByRole("region")
+      .filter((region) => region.id !== "booking");
+    expect(sourceRegions).toHaveLength(14);
+    expect(sourceRegions[0]).toHaveAccessibleName(orderedTitles[0]);
+    expect(sourceRegions[13]).toHaveAccessibleName(orderedTitles[13]);
+    expect(
+      screen.getByRole("region", { name: "Plan a focused conversation" }),
+    ).toBeVisible();
   });
 
   it("labels exact revenue and profit values in the financial chart", () => {
