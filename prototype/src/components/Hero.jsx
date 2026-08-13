@@ -1,5 +1,6 @@
 import { ArrowDownRight } from "lucide-react";
 import { ReservedAction } from "./ReservedAction.jsx";
+import { actionLinks } from "../content/site-actions.js";
 
 export function Hero({ card }) {
   return (
@@ -19,7 +20,9 @@ export function Hero({ card }) {
         <h1>{card.heading}</h1>
         <p className="hero__meta">{card.paragraphs[0]}</p>
         <div className="button-row">
-          <ReservedAction>{card.buttons[0]}</ReservedAction>
+          <a className="button button--primary" href={actionLinks.requestDeck}>
+            {card.buttons[0]}
+          </a>
           <ReservedAction variant="secondary">{card.buttons[1]}</ReservedAction>
         </div>
         <a className="hero__scroll" href="#project-overview">

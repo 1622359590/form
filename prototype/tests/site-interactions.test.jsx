@@ -1,6 +1,7 @@
 import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { describe, expect, it } from "vitest";
+import { App } from "../src/App.jsx";
 import { ReservedAction } from "../src/components/ReservedAction.jsx";
 import { SiteHeader } from "../src/components/SiteHeader.jsx";
 
@@ -12,6 +13,28 @@ const items = [
 ];
 
 describe("site interactions", () => {
+  it("connects deck and BP requests to the verified public email", () => {
+    render(<App />);
+
+    const deckHref = screen
+      .getByRole("link", { name: "Request Full Deck" })
+      .getAttribute("href");
+    const bpHref = screen
+      .getByRole("link", { name: "Request Full BP" })
+      .getAttribute("href");
+
+    expect(deckHref).toContain(
+      "subject=Request%20for%20the%20Lianguang%20Technology%20full%20deck",
+    );
+    expect(deckHref).toContain("%0A%0A");
+    expect(decodeURIComponent(deckHref)).toBe(
+      "mailto:huanglb118@gmail.com?subject=Request for the Lianguang Technology full deck&body=Hello Huang Libo,\n\nI would like to request a copy of the full presentation deck.\n\nThank you.",
+    );
+    expect(decodeURIComponent(bpHref)).toBe(
+      "mailto:huanglb118@gmail.com?subject=Request for the Lianguang Technology full business plan&body=Hello Huang Libo,\n\nI would like to request a copy of the full business plan when it is available.\n\nThank you.",
+    );
+  });
+
   it("opens and dismisses the mobile navigation with Escape", async () => {
     const user = userEvent.setup();
     render(<SiteHeader items={items} />);

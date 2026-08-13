@@ -21,6 +21,7 @@ import {
   Workflow,
 } from "lucide-react";
 import { ReservedAction } from "./ReservedAction.jsx";
+import { actionLinks } from "../content/site-actions.js";
 
 const pillarIcons = [Cpu, Workflow, Bot, MapPin];
 const painIcons = [AlertTriangle, Cable, Bot];
@@ -320,7 +321,9 @@ function Vision({ card }) {
       <p className="vision-signoff">{card.paragraphs.at(-1)}</p>
       <div className="button-row button-row--center">
         <ReservedAction>{card.buttons[0]}</ReservedAction>
-        <ReservedAction variant="secondary">{card.buttons[1]}</ReservedAction>
+        <a className="button button--secondary" href={actionLinks.requestBp}>
+          Request Full BP
+        </a>
       </div>
     </>
   );
