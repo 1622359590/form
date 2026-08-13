@@ -289,6 +289,53 @@ describe("site interactions", () => {
     ).not.toBeInTheDocument();
   });
 
+  it("links the menu trigger to the controlled mobile navigation", async () => {
+    const user = userEvent.setup();
+    render(<SiteHeader items={items} />);
+
+    const toggle = screen.getByRole("button", { name: /open navigation/i });
+    expect(toggle).toHaveAttribute("aria-controls", "mobile-navigation");
+    expect(toggle).toHaveAttribute("aria-expanded", "false");
+
+    await user.click(toggle);
+    expect(toggle).toHaveAttribute("aria-expanded", "true");
+    expect(screen.getByRole("navigation", { name: /mobile/i })).toHaveAttribute(
+      "id",
+      "mobile-navigation",
+    );
+  });
+
+  it("returns focus to the menu trigger after Escape", async () => {
+    const user = userEvent.setup();
+    render(<SiteHeader items={items} />);
+
+    const toggle = screen.getByRole("button", { name: /open navigation/i });
+    await user.click(toggle);
+    screen
+      .getByRole("navigation", { name: /mobile/i })
+      .querySelector("a")
+      .focus();
+    await user.keyboard("{Escape}");
+
+    expect(toggle).toHaveFocus();
+  });
+
+  it("closes the mobile menu when the viewport returns to desktop", async () => {
+    const user = userEvent.setup();
+    render(<SiteHeader items={items} />);
+
+    await user.click(screen.getByRole("button", { name: /open navigation/i }));
+    Object.defineProperty(window, "innerWidth", {
+      configurable: true,
+      value: 1024,
+    });
+    fireEvent(window, new Event("resize"));
+
+    expect(
+      screen.queryByRole("navigation", { name: /mobile/i }),
+    ).not.toBeInTheDocument();
+  });
+
   it("closes the mobile navigation after choosing a section", async () => {
     const user = userEvent.setup();
     render(<SiteHeader items={items} />);

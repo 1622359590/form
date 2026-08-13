@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Menu, X } from "lucide-react";
 
 function NavLinks({ items, onNavigate }) {
@@ -11,17 +11,29 @@ function NavLinks({ items, onNavigate }) {
 
 export function SiteHeader({ items }) {
   const [isOpen, setIsOpen] = useState(false);
+  const toggleRef = useRef(null);
 
   useEffect(() => {
     if (!isOpen) return undefined;
 
     function onKeyDown(event) {
-      if (event.key === "Escape") setIsOpen(false);
+      if (event.key !== "Escape") return;
+      setIsOpen(false);
+      toggleRef.current?.focus();
     }
 
     window.addEventListener("keydown", onKeyDown);
     return () => window.removeEventListener("keydown", onKeyDown);
   }, [isOpen]);
+
+  useEffect(() => {
+    function onResize() {
+      if (window.innerWidth > 860) setIsOpen(false);
+    }
+
+    window.addEventListener("resize", onResize);
+    return () => window.removeEventListener("resize", onResize);
+  }, []);
 
   return (
     <header className="site-header">
@@ -39,8 +51,10 @@ export function SiteHeader({ items }) {
         </a>
 
         <button
+          ref={toggleRef}
           className="menu-toggle"
           type="button"
+          aria-controls="mobile-navigation"
           aria-expanded={isOpen}
           aria-label={isOpen ? "Close navigation" : "Open navigation"}
           onClick={() => setIsOpen((value) => !value)}
@@ -50,7 +64,11 @@ export function SiteHeader({ items }) {
       </div>
 
       {isOpen ? (
-        <nav className="mobile-nav" aria-label="Mobile">
+        <nav
+          className="mobile-nav"
+          id="mobile-navigation"
+          aria-label="Mobile"
+        >
           <NavLinks items={items} onNavigate={() => setIsOpen(false)} />
         </nav>
       ) : null}
