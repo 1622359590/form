@@ -54,6 +54,15 @@ describe("site content", () => {
     ).toBeVisible();
   });
 
+  it("renders the supplied company copyright in the page footer", () => {
+    render(<App />);
+
+    const footer = screen.getByRole("contentinfo");
+    expect(footer).toHaveTextContent(
+      "2026 LIANGUANGIATEK LIMITED. All rights reserved.",
+    );
+  });
+
   it("labels exact revenue and profit values in the financial chart", () => {
     render(<App />);
 
